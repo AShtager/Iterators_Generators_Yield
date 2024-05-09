@@ -3,8 +3,7 @@ import types
 
 def flat_generator(list_of_lists):
     for i in list_of_lists:
-        for j in i:
-            yield j
+        yield from i
 
 
 def test_2():
